@@ -8,33 +8,52 @@ title: gewl
 		{% for project in projects reversed %}
 		<a href="{{project.link}}" class="project-link">
 			<div class="project">
-				<div class="project-text">{{ project.title }}</div>
+				<div class="project-text">{{ project.title }} - {{ project.date | date: '%B %Y' }}</div>
 				<div style="background:url({{project.imagepath}}); background-size:100%;" class="layer">
 				</div>
+				{% for key in project %}
+				<div id="{{ key }}" class="hidden">{{ project[key] }}</div>
+				{% endfor %}
 			</div>
 		</a>
 		{% endfor %}
 	</div>
 	<div class="short-bio">
-		<h1>Gil Lawson, or gewl</h1>
+		<h1 id="panel-head">Gil Lawson [gewl]</h1>
 		<ul>
-			<li>Engineer, technologist, archivist, and writer.</li>
-			<li>b. 1990</li>
-			<li>Santa Fe, NM => New York, New York</li>
+			<li id="panel-text-1">Engineer, technologist, artist, and writer.</li>
+			<li id="panel-text-2">b. 1990</li>
+			<li id="panel-text-3">Santa Fe, NM => New York, NY</li>
 		</ul>
 	</div>
 </div>
 <script>
-$('.project').hover(
-		function() {
-			$( this ).children('.layer').fadeTo(150, .2)
-			$( this ).children('.project-text').show()
-		},
-		function() {
-			$( this ).children('.layer').fadeTo(150, 1)	
-			$( this ).children('.project-text').hide()
-		}
-	)
+$(document.ready) (
+		$('.project').hover(
+			function() {
+				let staticThis = this
+					$( this ).children('.layer').stop(true, true).fadeTo(150, .2)
+					$( this ).children('.project-text').show()
+					$('#panel-head').addClass('black-text').text($( this ).children('#title').text())
+					$('#panel-text-1').addClass('black-text').text("Role: " + $( this ).children('#role').text())
+					if ($( this ).children('#technologies').text() != "") {
+						$('#panel-text-2').addClass('black-text').text("Technologies: " + $( this ).children('#technologies').text())
+					} else {
+						$('#panel-text-2').hide()
+					}
+					$('#panel-text-3').addClass('black-text').text("Info: " + $( this ).children('#content').text())
+			},
+			function() {
+				$( this ).children('.layer').stop(true, true).fadeTo(150, 1)	
+					$( this ).children('.project-text').hide()
+					$('#panel-head').removeClass('black-text').text("Gil Lawson [gewl]")
+					$('#panel-text-1').removeClass('black-text').text("Engineer, technologist, artist, archivist, computer boy, and writer.")
+					$('#panel-text-2').removeClass('black-text').text("b. 1990")
+					$('#panel-text-2').show()
+					$('#panel-text-3').removeClass('black-text').text("Santa Fe, NM => New York, NY")
+			}
+			)
+		)
 </script><!-- /.blurb -->
 
 
