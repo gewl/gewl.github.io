@@ -1,0 +1,173 @@
+/* sitewide */
+
+html {
+	cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+body {
+    margin: 10px auto;
+    width: 90vw;
+    background-color: snow;
+    padding-top: 0px;
+}
+.blurb li {
+	list-style: none;
+	list-style-position: inside;
+	text-align: left;
+	margin-left: 40px;
+	text-indent: -2em;
+	padding-left: 1em;
+}
+.blurb li:before {
+	color: black;
+	content: "\261E";
+	margin-right: 15px;
+}
+.container {
+	padding-top: 70px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+nav {
+	top: 0;
+	z-index: 500;
+	background-color: snow;
+	margin-top: 0px;
+	position: fixed;
+	width: inherit;
+	display: inline-block;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	border-bottom: 1px dotted black;
+	margin-bottom: 20px;
+}
+nav ul, footer ul {
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+.onsite-links{
+	float: left;
+}
+.onsite-links li{
+	float: left;
+    margin-right: 20px;
+}
+.offsite-links {
+	text-align: right;
+	float: right;
+	width: 50%;
+	padding: 0px;
+}
+.offsite-links li {
+	margin-left: 20px;
+}
+nav ul li, footer ul li {
+    display: inline;
+}
+a {
+    text-decoration: none;
+    color: blue;
+}
+a:hover {
+    text-decoration: underline;
+    color: rosybrown;
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+h1 {
+	line-height: 0px;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+h2 {
+	line-height: 0px;
+	font-style: italic;
+	text-align: left;
+	margin-left: 60px;
+    margin-bottom: 40px;
+}
+p {
+    font-size: 1em;
+    line-height: 1em;
+    color: #333;
+}
+li {
+	font-style: italic;
+}
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}
+
+/* landing */
+.projects {
+	float: left;
+	width: 60%;
+	margin-top: 10px;
+}
+
+.project {
+	width: 100%;
+	height: 250px;
+	background-color: black;
+	float: left;
+	border: 1px dotted black;
+	position: relative;
+	margin-bottom: 15px;
+}
+.project-link {
+	width: 100%;
+	height: 100%;
+}
+
+.layer {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.project-text {
+	display:none;
+	position: absolute;
+	color: white;
+	height: 100%;
+	width: inherit;
+	line-height: 250px;
+	text-align: center;
+	font-size: 3em;
+}
+
+.project-info {
+	float: right;
+	color: black;
+	border: 1px dashed darkgrey;
+	padding: 10px;
+}
+.project-info a {
+	font-weight: bold;
+	display: inline;
+}
+
+.short-bio {
+	min-width: 400px;
+	background-color: white;
+	color: blue;
+	padding-top: 30px;
+	padding-bottom: 25px;
+	padding-right: 10px;
+	border: 1px dotted black;
+	margin-top: -20px;
+	right: 0;
+	margin-right: 64px;
+	text-align: center;
+	position: fixed;
+	width: 33%;
+}
+.short-bio li {
+	line-height: 30px;
+}

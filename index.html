@@ -1,1 +1,49 @@
-Hello World
+---
+layout: default
+title: gewl
+---
+<div class="blurb">
+	<div class="projects">
+		{% assign projects = site.projects | sort: 'date' %}
+		{% for project in projects reversed %}
+		<a href="{{project.link}}" class="project-link">
+			<div class="project">
+				<div class="project-text">{{ project.title }}</div>
+				<div style="background:url({{project.imagepath}}); background-size:100%;" class="layer">
+				</div>
+			</div>
+		</a>
+		{% endfor %}
+	</div>
+	<div class="short-bio">
+		<h1>Gil Lawson, or gewl</h1>
+		<ul>
+			<li>Engineer, technologist, archivist, and writer.</li>
+			<li>b. 1990</li>
+			<li>Santa Fe, NM => New York, New York</li>
+		</ul>
+	</div>
+</div>
+<script>
+$('.project').hover(
+		function() {
+			$( this ).children('.layer').fadeTo(150, .2)
+			$( this ).children('.project-text').show()
+		},
+		function() {
+			$( this ).children('.layer').fadeTo(150, 1)	
+			$( this ).children('.project-text').hide()
+		}
+	)
+</script><!-- /.blurb -->
+
+
+<!-- <div class="project-info"> -->
+<!-- 	<strong>{{ project.title }}</strong>: --> 
+<!-- 	{{project.content}} -->
+<!-- 	<ul> -->
+<!-- 		<li><strong>Role:</strong> {{project.role}}</li> -->
+<!-- 		<li><strong>Link:</strong> <a href="{{project.link}}">{{project.title}}</a></li> -->
+<!-- 		<li><strong>Technologies:</strong> {{project.technologies}}</a></li> -->
+<!-- 	</ul> -->
+<!-- </div> -->
