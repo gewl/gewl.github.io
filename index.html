@@ -28,8 +28,8 @@ title: gewl
 	</div>
 </div>
 <script>
-$(document.ready) (
-		$('.project').hover(
+$(document).ready(() => {
+	$('.project').hover(
 			function() {
 				let staticThis = this
 					$( this ).children('.layer').stop(true, true).fadeTo(150, .2)
@@ -41,7 +41,7 @@ $(document.ready) (
 					} else {
 						$('#panel-text-2').hide()
 					}
-					$('#panel-text-3').addClass('black-text').text("Info: " + $( this ).children('#content').text())
+				$('#panel-text-3').addClass('black-text').text("Info: " + $( this ).children('#content').text())
 			},
 			function() {
 				$( this ).children('.layer').stop(true, true).fadeTo(150, 1)	
@@ -52,8 +52,8 @@ $(document.ready) (
 					$('#panel-text-2').show()
 					$('#panel-text-3').removeClass('black-text').text("Santa Fe, NM => New York, NY")
 			}
-			)
-		)
+	)
+})
 </script><!-- /.blurb -->
 
 
