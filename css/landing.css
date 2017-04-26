@@ -72,16 +72,13 @@
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	padding-right: 10px;
 }
 
 #panel-foot li {
 	display: inline;
 	line-height: 0px;
 	width: 0px;
-}
-
-#panel-foot i {
-	margin-left: 45px;
 }
 
 .hidden {
