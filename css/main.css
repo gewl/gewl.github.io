@@ -23,11 +23,7 @@ body {
 	text-indent: -2em;
 	padding-left: 1em;
 }
-.blurb li:before {
-	color: black;
-	content: "\261E";
-	margin-right: 15px;
-}
+
 .container {
 	padding-top: 40px;
 	padding-left: 10px;
@@ -49,9 +45,6 @@ body {
 }
 .offsite-links li {
 	margin-left: 20px;
-}
-nav ul li, footer ul li {
-    display: inline;
 }
 a {
     text-decoration: none;

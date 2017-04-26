@@ -52,13 +52,38 @@
 	background-color: white;
 	color: blue;
 	padding-top: 30px;
-	padding-bottom: 25px;
+	padding-bottom: 65px;
 	padding-right: 15px;
 	border: 1px dotted black;
 	left: 0%;
 	position: fixed;
 	width: 33%;
 }
+
+#outer {
+	position: absolute;
+	border-top: 1px dotted black;
+	bottom: 0px;
+	width: 100%;
+}
+
+#panel-foot {
+	bottom: 0px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#panel-foot li {
+	display: inline;
+	line-height: 0px;
+	width: 0px;
+}
+
+#panel-foot i {
+	margin-left: 45px;
+}
+
 .hidden {
 	display: none;
 }
@@ -69,4 +94,10 @@
 .short-bio li {
 	line-height: 30px;
 	margin-left: -10px;
+}
+
+#bio-info li:before {
+	color: black;
+	content: "\261E";
+	margin-right: 15px;
 }
