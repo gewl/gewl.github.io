@@ -1,5 +1,5 @@
 ---
-title: 2D Platformer (Very WIP)
+title: 2D Platformer Proto
 date: 2017-04-20
 link: https://github.com/gewl/Unity_2DPlatformer
 imagepath: /images/2dplatformer.png
