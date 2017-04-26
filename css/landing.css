@@ -1,8 +1,8 @@
 /* landing */
 .projects {
-	float: left;
+	float: right;
 	width: 60%;
-	margin-top: 10px;
+	margin-right: 20px;
 }
 
 .project {
@@ -55,8 +55,7 @@
 	padding-bottom: 25px;
 	padding-right: 15px;
 	border: 1px dotted black;
-	margin-top: -20px;
-	right: 5%;
+	left: 0%;
 	position: fixed;
 	width: 33%;
 }

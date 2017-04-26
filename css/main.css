@@ -10,7 +10,6 @@ html {
 body {
     margin: 10px auto;
     width: 90vw;
-    background-color: snow;
     padding-top: 0px;
 }
 .blurb {
@@ -30,27 +29,9 @@ body {
 	margin-right: 15px;
 }
 .container {
-	padding-top: 70px;
+	padding-top: 40px;
 	padding-left: 10px;
 	padding-right: 10px;
-}
-nav {
-	top: 0;
-	z-index: 500;
-	background-color: snow;
-	margin-top: 0px;
-	position: fixed;
-	width: inherit;
-	display: inline-block;
-	padding-top: 10px;
-	padding-bottom: 5px;
-	border-bottom: 1px dotted black;
-	margin-bottom: 20px;
-}
-nav ul, footer ul {
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
 }
 .onsite-links{
 	float: left;
