@@ -12,20 +12,18 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="blurb">
-				<div id="projects">
-					{% assign projects = site.projects | sort: 'date' %}
-					{% for project in projects reversed %}
-					<div onclick="window.location='{{project.link}}';" class="project" id="{{project.tags}}">
-						<div class="project-text">{{ project.title }} - {{ project.date | date: '%B %Y' }}</div>
-						<div style="background:url({{project.imagepath}}); background-size:100%;" class="layer">
-						</div>
-						{% for key in project %}
-						<div id="{{ key }}" class="hidden">{{ project[key] }}</div>
-						{% endfor %}
+			<div id="projects">
+				{% assign projects = site.projects | sort: 'date' %}
+				{% for project in projects reversed %}
+				<div onclick="window.location='{{project.link}}';" class="project" id="{{project.tags}}">
+					<div class="project-text">{{ project.title }} - {{ project.date | date: '%B %Y' }}</div>
+					<div style="background:url({{project.imagepath}}); background-size:100%;" class="layer">
 					</div>
+					{% for key in project %}
+					<div id="{{ key }}" class="hidden">{{ project[key] }}</div>
 					{% endfor %}
 				</div>
+				{% endfor %}
 			</div>
 		</div><!-- /.container -->
 		{% include sidebar.html %}
@@ -45,7 +43,7 @@ $(document).ready(() => {
 					} else {
 						$('#panel-text-2').hide()
 					}
-				$('#panel-text-3').addClass('black-text').text("Info: " + $( this ).children('#content').text())
+				$('#panel-text-3').addClass('black-text').text($( this ).children('#content').text())
 			},
 			function() {
 				$( this ).children('.layer').stop(true, true).fadeTo(150, 1)	
