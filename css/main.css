@@ -1,10 +1,10 @@
 /* sitewide */
 
 html {
-	cursor: move; /* fallback if grab cursor is unsupported */
-    cursor: grab;
-    cursor: -moz-grab;
-    cursor: -webkit-grab;
+	/* cursor: move; /1* fallback if grab cursor is unsupported *1/ */
+    /* cursor: grab; */
+    /* cursor: -moz-grab; */
+    /* cursor: -webkit-grab; */
 	font-family: Courier, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 }
 body {
@@ -12,16 +12,16 @@ body {
     width: 90vw;
     padding-top: 0px;
 }
-.blurb {
-	padding-right: 20px;
-}
-.blurb li {
+body li {
 	list-style: none;
 	list-style-position: inside;
 	text-align: left;
 	margin-left: 40px;
 	text-indent: -2em;
 	padding-left: 1em;
+}
+.blurb {
+	padding-right: 20px;
 }
 
 .container {
@@ -58,7 +58,7 @@ a:hover {
     cursor: -webkit-grabbing;
 }
 h1 {
-	line-height: 0px;
+	line-height: 30px;
     font-size: 2.5em;
     margin-bottom: 40px;
 }

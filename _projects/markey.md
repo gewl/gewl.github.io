@@ -5,5 +5,6 @@ link: https://github.com/gewl/markey
 imagepath: /images/markey.png
 technologies: JavaScript, Angular, HTML5, CSS/SCSS, PostgreSQL, Sequelize, Express
 role: Developer
+tags: computer
 ---
 Markey is an e-commerce store that helps venues sell tickets directly to their clientele.

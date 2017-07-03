@@ -5,5 +5,6 @@ link: https://github.com/gewl/Unity_2DPlatformer
 imagepath: /images/2dplatformer.png
 technologies: C#, Unity
 role: Sole Developer
+tags: games-computer
 ---
 A prototype.
