@@ -61,14 +61,18 @@ $(document).ready(() => {
 					let staticThis = this;
 					let filter = $( this ).text();
 
+					if (filter === "everything") {
+						filter = false;
+					}
+
 					let children = $('#projects').children()
 
 					children.each((idx, child) => {
 						let $child = $(child);
-						if (!$child.is(":visible") && (filter === "everything" || $child.attr('id').split('-').includes(filter))) {
+						if (!$child.is(":visible") && (!filter || $child.attr('id').split('-').includes(filter))) {
 							$child.stop(true, true)
 							$child.fadeIn(200)
-						} else if ($child.is(":visible") && !$child.attr('id').split('-').includes(filter)) {
+						} else if (filter && $child.is(":visible") && !$child.attr('id').split('-').includes(filter)) {
 							$child.stop(true, true)
 							$child.fadeOut(200)
 						}
