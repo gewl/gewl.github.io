@@ -1,5 +1,5 @@
 ---
-title: PC Gamer - Battlegrounds' map gets more haunting as you play it
+title: PC Gamer 
 date: 2017-05-20
 link: http://www.pcgamer.com/how-the-playerunknowns-battlegrounds-map-haunts-you-over-time/
 imagepath: /images/pcgamer.png

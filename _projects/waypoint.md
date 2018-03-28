@@ -1,5 +1,5 @@
 ---
-title: Waypoint - What It Means When Algorithms Start Telling Stories for Us
+title: Waypoint
 date: 2017-06-20
 link: https://waypoint.vice.com/en_us/article/vvav7d/what-it-means-when-algorithims-start-telling-stories-for-us
 imagepath: /images/waypoint.png
