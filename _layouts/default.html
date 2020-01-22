@@ -37,7 +37,7 @@ $(document).ready(() => {
 					$( this ).children('.layer').stop(true, true).fadeTo(150, .2)
 					$( this ).children('.project-text').show()
 					$('#panel-head').addClass('black-text').text($( this ).children('#title').text())
-					$('#panel-text-1').addClass('black-text').text("Role: " + $( this ).children('#role').text())
+					$('#panel-text-1').addClass('black-text').text($( this ).children('#summary').text())
 					if ($( this ).children('#technologies').text() != "") {
 						$('#panel-text-2').addClass('black-text').text("Technologies: " + $( this ).children('#technologies').text())
 					} else {
