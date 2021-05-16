@@ -2,9 +2,13 @@ img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 60%;
+        outline: 2px black solid;
+	width: 90%;
 }
 
+.narrow {
+	width: 60%;
+}
 
 * {
         margin: 0;
@@ -16,9 +20,6 @@ img {
         background: transparent;
     }
 
-img {
-    outline: 2px black solid;
-}
 
 body {
 	margin: 5px;
@@ -50,7 +51,7 @@ h4 {
 
 p {
 	font-family: 'MaziusRegular';
-	font-size: 28px;
+	font-size: 16px;
 	text-align: left;
 	margin-left: 20px;
 	margin-right: 20px;
@@ -61,7 +62,6 @@ a {
 	font-size: 28px;
 	text-align: left;
 	margin-left: 20px;
-	margin-right: 20px;
 }
 
 
