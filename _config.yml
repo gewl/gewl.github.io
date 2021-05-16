@@ -1,8 +1,0 @@
-name: Gil Lawson
-markdown: kramdown
-
-collections:
-    - projects
-
-kramdown:
-    hard_wrap: false
