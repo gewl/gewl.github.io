@@ -2,9 +2,17 @@ img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-        outline: 2px black solid;
+        outline: 1px white dashed;
 	width: 90%;
 }
+
+iframe {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+        outline: 1px white dashed;
+}
+
 
 .narrow {
 	width: 60%;
@@ -26,59 +34,58 @@ body {
 	max-height: 100%;
 	border:  0px;
 	outline: 0px;
+	background-color: #222222;
 }
 
-.splash {
+.splash, .bio {
 	padding-top: 60px;
 	padding-right: 20px;
 	padding-left: 20px;
 	padding-bottom: 150px;
 }
 
+.bio p {
+	width:  60%;
+}
+
 h3 {
-	font-family: 'MaziusExtraItalic';
-	font-size: 80px;
+	font-family: 'IBM Plex Mono', monospace;
+	font-weight: 400;
+	font-size: 20px;
 	text-align: center;
-	outline: 1px black dashed;
+	outline: 1px white dashed;
+	color: white;
 }
 
 h4 {
-	font-family: 'MaziusExtraItalic';
+	font-family: 'IBM Plex Mono', monospace;
 	font-size: 48px;
 	text-align: right;
-	margin: 0px:
+	margin: 0px;
+	color: white;
 }
 
 p { 
-	font-family: 'MaziusRegular';
+	font-family: 'IBM Plex Mono', monospace;
 	font-size: 16px;
 	text-align: left;
 	margin-left: 20px;
 	margin-right: 20px;
+	color: white;
 }
 
 span {
-	font-family: 'MaziusRegular';
+	font-family: 'IBM Plex Mono', monospace;
 	font-size: 16px;
 	text-align: left;
+	color: white;
 }
 
 a {
-	font-family: 'MaziusExtraItalic';
+	font-family: 'IBM Plex Mono', monospace;
 	font-size: 28px;
 	text-align: left;
 	margin-left: 20px;
+	color: white;
 }
 
-
-@font-face {
-	font-family: 'MaziusExtraItalic';
-	src: url("fonts/MAZIUSREVIEW20.09-Extraitalic.woff2") format("woff2"),
-		url("fonts/MAZIUSREVIEW20.09-Extraitalic.woff") format("woff");
-}
-
-@font-face {
-	font-family: 'MaziusRegular';
-	src: url("fonts/MAZIUSREVIEW20.09-Regular.woff2") format("woff2"),
-		url("fonts/MAZIUSREVIEW20.09-Regular.woff") format("woff");
-}
