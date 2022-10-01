@@ -10,9 +10,14 @@ iframe {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-        outline: 1px white dashed;
+        outline: 1px white ridge;
 }
 
+#nameplate {
+	outline: none;
+	width: 100%;
+	margin-right:  0px;
+}
 
 .narrow {
 	width: 60%;
@@ -51,7 +56,7 @@ body {
 h3 {
 	font-family: 'IBM Plex Mono', monospace;
 	font-weight: 400;
-	font-size: 20px;
+	font-size: 24px;
 	text-align: center;
 	outline: 1px white dashed;
 	color: white;
@@ -67,7 +72,6 @@ h4 {
 
 p { 
 	font-family: 'IBM Plex Mono', monospace;
-	font-size: 16px;
 	text-align: left;
 	margin-left: 20px;
 	margin-right: 20px;
@@ -76,16 +80,55 @@ p {
 
 span {
 	font-family: 'IBM Plex Mono', monospace;
-	font-size: 16px;
 	text-align: left;
 	color: white;
 }
 
 a {
 	font-family: 'IBM Plex Mono', monospace;
-	font-size: 28px;
 	text-align: left;
 	margin-left: 20px;
 	color: white;
 }
 
+p, a, span {
+	font-size: 16px;
+}
+
+
+.container-layout {
+	min-width:  100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+	background-color: white;
+}
+
+.sidebar-container {
+	min-height:  100%;
+	width:  20%;
+	min-width: 300px;
+	background-color:  white;
+	display: flex;
+	flex-direction: column;
+
+}
+
+#sidebar {
+	height:  100%;
+	width: 100%;
+	margin:  0;
+	padding: 0;
+	flex-grow: 1;
+}
+
+
+#main {
+	flex: 1;
+}
+
+.video-embed {
+	aspect-ratio: 16/9;
+	width:  80%;
+}
